@@ -12,4 +12,11 @@ export class TodoService {
 
     this.firestoreCollection = firestore.collection('todos')
   }
+
+  addTodo(title: string){
+    this.firestoreCollection.add({
+      title: title,
+      isDone: false
+    })
+  }
 }
