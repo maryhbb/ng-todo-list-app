@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class TodoComponent {
 
+  onClick(titleInput: HTMLInputElement){
+  titleInput.value
+  }
 }
