@@ -6,8 +6,10 @@
   </div>
   <div class="card-body p-4">
     <div class="input-group">
-      <input type="text" class="form-control" placeholder="Title goes here">
-      <button class="btn"><i class="fa-solid fa-circle-plus fa-lg"></i></button>
+      <input type="text" class="form-control" placeholder="Title goes here" #titleinput>
+      <button class="btn"
+      (click)="onClick(titleinput)"
+      ><i class="fa-solid fa-circle-plus fa-lg"></i></button>
     </div>
   </div>
 </div>
