@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {TodoService} from "../../shared/todo.service";
 
 @Component({
@@ -6,8 +6,18 @@ import {TodoService} from "../../shared/todo.service";
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.scss']
 })
-export class TodoComponent {
-  constructor(private todoService: TodoService) {
+export class TodoComponent implements OnInit {
+
+  todos: any[] = [];
+
+  constructor(private todoService: TodoService) { }
+
+  ngOnInit(): void {
+    this.todoService.firestoreCollection.valueChanges({ idField: 'id' })
+      .subscribe(item => {
+        this.todos = item.sort((a:any,b:any) =>
+        {return a.isDone -b.isDone } );
+      })
   }
 
   onClick(titleInput: HTMLInputElement) {
