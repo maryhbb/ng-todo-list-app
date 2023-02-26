@@ -27,12 +27,13 @@
         <span>
           <i
             class="text-success"
+            (click)="onStatusChange(item.id, !item.isDone)"
             [ngClass]="
               item.isDone ? 'fa-solid fa-circle-check' : 'fa-regular fa-circle'
             "
           ></i>
           {{ item.title }}
-          <span class="float-end text-secondary">
+          <span class="float-end text-secondary" (click)="onDelete(item.id)">
             <i class="fa-solid fa-trash-can"></i>
           </span>
         </span>
