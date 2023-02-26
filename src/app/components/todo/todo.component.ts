@@ -32,7 +32,7 @@ export class TodoComponent implements OnInit {
     this.todoService.updateTodoStatus(id, newStatus);
   }
 
-  onDelete(id:string){
+  onDelete(id: string) {
     this.todoService.deleteTodo(id);
   }
 }
