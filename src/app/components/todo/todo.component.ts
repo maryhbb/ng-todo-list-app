@@ -27,4 +27,12 @@ export class TodoComponent implements OnInit {
       titleInput.value = '';
     }
   }
+
+  onStatusChange(id: string, newStatus: boolean) {
+    this.todoService.updateTodoStatus(id, newStatus);
+  }
+
+  onDelete(id:string){
+    this.todoService.deleteTodo(id);
+  }
 }
