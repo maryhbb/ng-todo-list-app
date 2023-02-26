@@ -11,6 +11,9 @@ export class TodoComponent {
   }
 
   onClick(titleInput: HTMLInputElement) {
-    this.todoService.addTodo(titleInput.value)
+    if (titleInput.value) {
+      this.todoService.addTodo(titleInput.value);
+      titleInput.value = "";
+    }
   }
 }
