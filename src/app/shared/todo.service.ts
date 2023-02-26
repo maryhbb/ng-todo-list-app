@@ -4,7 +4,6 @@ import {
   AngularFirestoreCollection,
 } from '@angular/fire/compat/firestore';
 
-
 @Injectable({
   providedIn: 'root',
 })
@@ -20,6 +19,5 @@ export class TodoService {
       title: title,
       isDone: false,
     });
-
   }
 }
