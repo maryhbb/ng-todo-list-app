@@ -1,4 +1,6 @@
-# Ng ToDo List App
+# ng-ToDo List App
+
+![](https://skillicons.dev/icons?i=angular)
 
 [![Continuous Deployment](https://github.com/maryhbb/ng-todo-list-app/actions/workflows/deploy.yml/badge.svg)](https://github.com/maryhbb/ng-todo-list-app/actions/workflows/deploy.yml)
 
