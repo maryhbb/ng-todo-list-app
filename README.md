@@ -1,5 +1,8 @@
 # ng-ToDo List App
 
+
+A mini project to create a simple todo List app using Angular, Typescript and Firebase.
+
 ![](https://skillicons.dev/icons?i=angular)
 
 [![Continuous Deployment](https://github.com/maryhbb/ng-todo-list-app/actions/workflows/deploy.yml/badge.svg)](https://github.com/maryhbb/ng-todo-list-app/actions/workflows/deploy.yml)
