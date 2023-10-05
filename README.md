@@ -1,7 +1,7 @@
 # ng-ToDo List App
 
 
-A mini project to create a simple todo List app using Angular, Typescript and Firebase.
+A mini project to create a simple todo List app using Angular, Typescript and Firebase!
 
 ![](https://skillicons.dev/icons?i=angular)
 
